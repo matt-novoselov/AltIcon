@@ -5,10 +5,13 @@
   </h2>
 </p>
 
-!!! iOS 13.0+
+<img src="https://github.com/matt-novoselov/matt-novoselov/blob/2a6f77acad3a364d658f76d2de51a195292eab5c/Files/SVGs/Badges/Platforms/ios13.svg" alt="iOS 13+" style="height: 30px">
 
-!!! A package that let's you change App Icon without an alert.
-!!! Image of alert
+AltIcon - a better way to change icons in your app. This package allows you to change app icons without displaying an alert message.
+
+<p align="center">
+  <img src="Media/alert.png" alt="Alert" height="100">
+</p>
 
 <img src="Media/showcase.gif" alt="GIF">
 
@@ -21,8 +24,9 @@ To install AltIcon using [Swift Package Manager](https://github.com/apple/swift-
 1. Enter `https://github.com/matt-novoselov/AltIcon.git`
 
 ## Usage
-1. !!!!
-2. !!!!
+1. Add alternative icons to your `.xcassets` file.
+2. Set `Include All App Icon Assets` to `YES` in your Build Settings.
+3. Import AltIcon to your porject:
    
 ```swift
 import SwiftUI
@@ -30,15 +34,15 @@ import AltIcon
 
 struct ContentView: View {
     var body: some View {
-
+        
         Button("Set Alternative Icon") {
             setAppIcon("AppIcon2")
         }
-
-        Button("Set Back Main Icon") {
-            setAppIcon(.main)
+        
+        Button("Reset Icon To Default") {
+            resetAppIcon()
         }
-
+        
     }
 }
 ```
