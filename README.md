@@ -26,7 +26,7 @@ To install AltIcon using [Swift Package Manager](https://github.com/apple/swift-
 ## Usage
 1. Add alternative icons to your `.xcassets` file.
 2. Set `Include All App Icon Assets` to `YES` in your Build Settings.
-3. Import AltIcon to your porject:
+3. Import AltIcon to your project:
    
 ```swift
 import SwiftUI
